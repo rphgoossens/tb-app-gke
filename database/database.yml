@@ -32,7 +32,7 @@ spec:
         - name: mysql
           image: rphgoossens/tb-mysql-docker:tb-docker-2.0
           ports:
-            - name: mysql 
+            - name: mysql
               containerPort: 3306
           volumeMounts:
             - mountPath: "/var/lib/mysql"
