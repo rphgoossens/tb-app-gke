@@ -12,14 +12,15 @@ spec:
       storage: 25Mi
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
-  name: mysql-deployment
+  name: mysql-stateful-set
   namespace: tb-demo
   labels:
     app: database
 spec:
   replicas: 1
+  serviceName: mysql-service
   selector:
     matchLabels:
       app: database
