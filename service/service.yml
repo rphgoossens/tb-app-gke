@@ -46,7 +46,7 @@ spec:
                   name: mysql-secrets
                   key: DB_PASSWORD
             - name: DB_URL
-              value: mysql://10.60.10.25:3306/db_terrax
+              value: mysql://mysql-service:3306/db_terrax
 ---
 apiVersion: v1
 kind: Service
